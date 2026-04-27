@@ -157,19 +157,23 @@ model: MiniMax-M2.7
 
 ### Step 8: 封面图
 
-**当前方案**（腾讯混元开通前）：
-- PIL 程序生成：深色渐变背景 + 芯片几何图案 + NotoSansCJK Black 大字排版
-- Pollinations.ai 备选（简单 prompt 有时能出好图）
+**主力方案：腾讯混元生图 3.0**（已接入 ✅）
 
-**计划方案**（等用户开通腾讯混元生图）：
-- 混元生图 3.0：50 次免费额度
-- 混元生图 2.0：50 次免费额度
-- 质量远超 PIL 和 Pollinations
+加载 `tencent-hunyuan-image` skill，调用混元生图 API 生成封面。免费额度 150 次（3.0/2.0/极速版各 50 次）。
+
+Prompt 示例：
+```
+Minimalist tech cover, {主题关键词}, dark blue gradient background, 
+cyan light accents, clean modern magazine style, 16:9 cinematic, no text
+```
+
+分辨率 `1024:576`（16:9），下载后裁到 900×500 发公众号。
+
+**备选方案**：
+- Pollinations.ai（混元额度用完或 API 故障时）
 
 **封面图要求**：
-- 900×500（16:9）
-- 必须包含文章主题关键词
-- 不用泛泛的「AI 科技风」
+- 必须包含文章主题关键词，不用泛泛的「AI 科技风」
 - 不用「深度分析 · Mario」等标注
 
 ### Step 9: 发布
